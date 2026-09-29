@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -27,12 +29,14 @@
 
         <nav class="navbar">
 
-           <a href="#home" class="logo"> 
-    Sanj.
-</a>
+            <a href="#home" class="logo">
+                Sanj<span>.</span>
+            </a>
+
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -41,13 +45,19 @@
             </ul>
 
             <div class="nav-actions">
-                <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">
+
+                <button id="themeToggle"
+                    class="theme-btn"
+                    aria-label="Toggle dark mode">
                     🌙
                 </button>
 
-                <button id="menuToggle" class="menu-btn" aria-label="Open menu">
+                <button id="menuToggle"
+                    class="menu-btn"
+                    aria-label="Open menu">
                     ☰
                 </button>
+
             </div>
 
         </nav>
@@ -55,22 +65,32 @@
     </header>
 
 
-    <!-- ================= HERO ================= -->
+    <!-- ================= MAIN ================= -->
 
     <main>
+
+
+        <!-- ================= HERO ================= -->
 
         <section id="home" class="hero">
 
             <div class="hero-content">
 
-                <h2
-                    class="hero-intro">
+                <h2 class="hero-intro">
                     Hello, I'm
-                </h2> 
+                </h2>
 
-                <h1>
-                    Some Sanjana<br>
-                    <span>Sanjay</span>
+                <h1 class="bubble-name">
+
+                    <span class="bubble-line blue-name">
+                        <span class="bubble-word">Some</span>
+                        <span class="bubble-word">Sanjana</span>
+                    </span>
+
+                    <span class="bubble-line black-name">
+                        <span class="bubble-word">Sanjay</span>
+                    </span>
+
                 </h1>
 
                 <h2>
@@ -78,10 +98,11 @@
                 </h2>
 
                 <p class="hero-description">
-                    Turning curiosity into code, and ideas into intelligent solutions.
-                    I love coding, exploring new technologies and building practical
-                    projects that help me learn and grow.
+                    Turning curiosity into code, and ideas into intelligent
+                    solutions. I love coding, exploring new technologies and
+                    building practical projects that help me learn and grow.
                 </p>
+
 
                 <div class="hero-buttons">
 
@@ -95,17 +116,18 @@
 
                 </div>
 
+
                 <div class="social-links">
 
                     <a href="https://github.com/sanjanasomey"
-                       target="_blank"
-                       rel="noopener noreferrer">
+                        target="_blank"
+                        rel="noopener noreferrer">
                         GitHub
                     </a>
 
                     <a href="https://www.linkedin.com/in/sanjana-some"
-                       target="_blank"
-                       rel="noopener noreferrer">
+                        target="_blank"
+                        rel="noopener noreferrer">
                         LinkedIn
                     </a>
 
@@ -117,107 +139,151 @@
 
             </div>
 
-            <div class="hero-visual">
 
-                <div class="profile-card">
+            <!-- HERO VISUAL -->
 
-                    <img src="myphoto.jpeg" alt="Some Sanjana Sanjay" class="profile-image">
+<div class="hero-visual">
 
-                    <h3>AI & DS</h3>
+    <!-- IMAGE - SEPARATE FROM CARD -->
+    <div class="coding-image-container">
 
-<p>
-    Student • Developer • Learner
-</p>
+        <img src="codingimg.png"
+             alt="AI and Data Science Developer"
+             class="coding-image">
 
-<p>
-    <strong>3rd Year • 2026</strong>
-</p>
+    </div>
 
-                    <div class="mini-stats">
 
-                        <div>
-                            <strong>8.41</strong>
-                            <span>Pointer</span>
-                        </div>
+    <!-- PROFILE CARD -->
+    <div class="profile-card">
 
-                        <div>
-                            <strong>2028</strong>
-                            <span>Graduate</span>
-                        </div>
+        <div class="profile-info">
 
-                    </div>
+            <h3>
+                AI & DS
+            </h3>
 
+            <p class="profile-role">
+                Student • Developer • Learner
+            </p>
+
+            <p class="profile-year">
+                3rd Year • 2026
+            </p>
+
+
+            <div class="profile-stats">
+
+                <div>
+                    <strong>8.41</strong>
+                    <span>Pointer</span>
+                </div>
+
+                <div>
+                    <strong>2028</strong>
+                    <span>Graduate</span>
                 </div>
 
             </div>
 
-        </section>
+        </div>
 
+    </div>
 
+</div>
+
+</section>
         <!-- ================= ABOUT ================= -->
 
         <section id="about" class="section">
 
             <div class="section-heading">
-                <p class="section-label">ABOUT ME</p>
-                <h2>Curious mind. Constant learner.</h2>
+
+                <p class="section-label">
+                    ABOUT ME
+                </p>
+
+                <h2>
+                    Curious mind. Constant learner.
+                </h2>
+
             </div>
+
 
             <div class="about-grid">
 
                 <div class="about-text">
 
                     <p>
-                        I am a third-year Artificial Intelligence and Data Science
-                        student at Jaihind College of Engineering, Kuran.
+                        I am a third-year Artificial Intelligence and Data
+                        Science student at Jaihind College of Engineering,
+                        Kuran.
                     </p>
 
                     <p>
-                        I am interested in web development, artificial intelligence,
-                        data science, IoT and software development. I enjoy coding
-                        and love learning new things every day.
+                        I am interested in web development, artificial
+                        intelligence, data science, IoT and software
+                        development. I enjoy coding and love learning new
+                        things every day.
                     </p>
 
                     <p>
-                        I believe that practical projects are one of the best ways
-                        to understand technology. I enjoy turning ideas into working
-                        projects while continuously improving my technical skills.
+                        I believe that practical projects are one of the best
+                        ways to understand technology. I enjoy turning ideas
+                        into working projects while continuously improving
+                        my technical skills.
                     </p>
 
                 </div>
 
+
                 <div class="about-highlights">
 
                     <div class="highlight-card">
+
                         <span>🎓</span>
+
                         <div>
                             <h3>Education</h3>
                             <p>BE – AI & Data Science</p>
                         </div>
+
                     </div>
 
+
                     <div class="highlight-card">
+
                         <span>💻</span>
+
                         <div>
                             <h3>Interests</h3>
                             <p>AI, Web Development & IoT</p>
                         </div>
+
                     </div>
 
+
                     <div class="highlight-card">
+
                         <span>🚀</span>
+
                         <div>
                             <h3>Approach</h3>
                             <p>Learn → Build → Improve</p>
                         </div>
+
                     </div>
 
+
                     <div class="highlight-card">
+
                         <span>📍</span>
+
                         <div>
                             <h3>Based In</h3>
                             <p>Pune, India</p>
                         </div>
+
                     </div>
 
                 </div>
@@ -229,18 +295,28 @@
 
         <!-- ================= EDUCATION ================= -->
 
-        <section id="education" class="section alternate-section">
+        <section id="education"
+            class="section alternate-section">
 
             <div class="section-heading">
-                <p class="section-label">EDUCATION</p>
-                <h2>My Academic Journey</h2>
+
+                <p class="section-label">
+                    EDUCATION
+                </p>
+
+                <h2>
+                    My Academic Journey
+                </h2>
+
             </div>
+
 
             <div class="timeline">
 
                 <div class="timeline-item">
 
                     <div class="timeline-dot"></div>
+
 
                     <div class="timeline-content">
 
@@ -261,7 +337,8 @@
                         </p>
 
                         <div class="education-score">
-                            Academic Pointer: <strong>8.41</strong>
+                            Academic Pointer:
+                            <strong>8.41</strong>
                         </div>
 
                     </div>
@@ -278,46 +355,120 @@
         <section id="skills" class="section">
 
             <div class="section-heading">
-                <p class="section-label">TECHNICAL SKILLS</p>
-                <h2>Technologies I Work With</h2>
+
+                <p class="section-label">
+                    TECHNICAL SKILLS
+                </p>
+
+                <h2>
+                    Technologies I Work With
+                </h2>
+
             </div>
+
 
             <div class="skills-grid">
 
-                <div class="skill-card">
-                    <span class="skill-icon">🌐</span>
-                    <h3>Web Development</h3>
-                    <p>HTML • CSS</p>
-                </div>
 
                 <div class="skill-card">
-                    <span class="skill-icon">🐍</span>
-                    <h3>Programming</h3>
-                    <p>Python • Java • C/C++</p>
+
+                    <span class="skill-icon">
+                        🌐
+                    </span>
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p>
+                        HTML • CSS
+                    </p>
+
                 </div>
 
-                <div class="skill-card">
-                    <span class="skill-icon">🤖</span>
-                    <h3>AI & Machine Learning</h3>
-                    <p>AI • ML</p>
-                </div>
 
                 <div class="skill-card">
-                    <span class="skill-icon">🗄️</span>
-                    <h3>Databases</h3>
-                    <p>SQL • MySQL • MongoDB</p>
+
+                    <span class="skill-icon">
+                        🐍
+                    </span>
+
+                    <h3>
+                        Programming
+                    </h3>
+
+                    <p>
+                        Python • Java • C/C++
+                    </p>
+
                 </div>
 
-                <div class="skill-card">
-                    <span class="skill-icon">🔧</span>
-                    <h3>Tools</h3>
-                    <p>Git • GitHub</p>
-                </div>
 
                 <div class="skill-card">
-                    <span class="skill-icon">📡</span>
-                    <h3>Internet of Things</h3>
-                    <p>IoT • Sensors • ESP32</p>
+
+                    <span class="skill-icon">
+                        🤖
+                    </span>
+
+                    <h3>
+                        AI & Machine Learning
+                    </h3>
+
+                    <p>
+                        AI • ML
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-icon">
+                        🗄️
+                    </span>
+
+                    <h3>
+                        Databases
+                    </h3>
+
+                    <p>
+                        SQL • MySQL • MongoDB
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-icon">
+                        🔧
+                    </span>
+
+                    <h3>
+                        Tools
+                    </h3>
+
+                    <p>
+                        Git • GitHub
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-icon">
+                        📡
+                    </span>
+
+                    <h3>
+                        Internet of Things
+                    </h3>
+
+                    <p>
+                        IoT • Sensors • ESP32
+                    </p>
+
                 </div>
 
             </div>
@@ -327,22 +478,31 @@
 
         <!-- ================= PROJECTS ================= -->
 
-        <section id="projects" class="section alternate-section">
+        <section id="projects"
+            class="section alternate-section">
 
             <div class="section-heading">
-                <p class="section-label">PROJECTS</p>
-                <h2>Things I've Built</h2>
+
+                <p class="section-label">
+                    PROJECTS
+                </p>
+
+                <h2>
+                    Things I've Built
+                </h2>
 
                 <p class="section-subtitle">
                     A selection of projects that represent my learning
                     and practical experience.
                 </p>
+
             </div>
+
 
             <div class="projects-grid">
 
 
-                <!-- Project 1 -->
+                <!-- PROJECT 1 -->
 
                 <article class="project-card">
 
@@ -360,28 +520,34 @@
 
                     <p>
                         An IoT-based project that detects the number of fingers
-                        and controls LEDs according to the detected finger count.
+                        and controls LEDs according to the detected finger
+                        count.
                     </p>
 
+
                     <div class="project-tags">
+
                         <span>Python</span>
                         <span>ESP32</span>
                         <span>IoT</span>
                         <span>Computer Vision</span>
+
                     </div>
 
-                    <a
-                        href="https://github.com/sanjanasomey/Finger-Count-Detection-ESP32"
+
+                    <a href="https://github.com/sanjanasomey/Finger-Count-Detection-ESP32"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="project-link">
+
                         View on GitHub →
+
                     </a>
 
                 </article>
 
 
-                <!-- Project 2 -->
+                <!-- PROJECT 2 -->
 
                 <article class="project-card">
 
@@ -403,12 +569,16 @@
                         to generate useful responses.
                     </p>
 
+
                     <div class="project-tags">
+
                         <span>Python</span>
                         <span>LLM</span>
                         <span>Prompt Engineering</span>
                         <span>AI</span>
+
                     </div>
+
 
                     <span class="project-status">
                         Academic Project
@@ -417,7 +587,7 @@
                 </article>
 
 
-                <!-- Project 3 -->
+                <!-- PROJECT 3 -->
 
                 <article class="project-card">
 
@@ -439,12 +609,16 @@
                         professional journey.
                     </p>
 
+
                     <div class="project-tags">
+
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                         <span>Responsive Design</span>
+
                     </div>
+
 
                     <span class="project-status">
                         CodeOrbit Internship
@@ -462,15 +636,24 @@
         <section id="experience" class="section">
 
             <div class="section-heading">
-                <p class="section-label">EXPERIENCE</p>
-                <h2>My Professional Journey</h2>
+
+                <p class="section-label">
+                    EXPERIENCE
+                </p>
+
+                <h2>
+                    My Professional Journey
+                </h2>
+
             </div>
+
 
             <div class="experience-card">
 
                 <div class="experience-icon">
                     💼
                 </div>
+
 
                 <div class="experience-content">
 
@@ -493,11 +676,14 @@
                         web interfaces.
                     </p>
 
+
                     <div class="experience-tags">
+
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                         <span>Responsive Design</span>
+
                     </div>
 
                 </div>
@@ -509,49 +695,112 @@
 
         <!-- ================= CERTIFICATIONS ================= -->
 
-        <section id="certifications" class="section alternate-section">
+        <section id="certifications"
+            class="section alternate-section">
 
             <div class="section-heading">
-                <p class="section-label">CERTIFICATIONS</p>
-                <h2>Learning Beyond the Classroom</h2>
+
+                <p class="section-label">
+                    CERTIFICATIONS
+                </p>
+
+                <h2>
+                    Learning Beyond the Classroom
+                </h2>
+
             </div>
+
 
             <div class="certifications-grid">
 
+
                 <div class="certificate-card">
+
                     <span>📊</span>
-                    <h3>GenAI-Powered Data Analytics</h3>
-                    <p>Forage</p>
+
+                    <h3>
+                        GenAI-Powered Data Analytics
+                    </h3>
+
+                    <p>
+                        Forage
+                    </p>
+
                 </div>
 
+
                 <div class="certificate-card">
+
                     <span>🔐</span>
-                    <h3>Cybersecurity Analyst</h3>
-                    <p>Forage</p>
+
+                    <h3>
+                        Cybersecurity Analyst
+                    </h3>
+
+                    <p>
+                        Forage
+                    </p>
+
                 </div>
 
+
                 <div class="certificate-card">
+
                     <span>💼</span>
-                    <h3>Technology Job Simulation</h3>
-                    <p>Deloitte</p>
+
+                    <h3>
+                        Technology Job Simulation
+                    </h3>
+
+                    <p>
+                        Deloitte
+                    </p>
+
                 </div>
 
+
                 <div class="certificate-card">
+
                     <span>🏭</span>
-                    <h3>Bajaj Manufacturing System</h3>
-                    <p>Certification</p>
+
+                    <h3>
+                        Bajaj Manufacturing System
+                    </h3>
+
+                    <p>
+                        Certification
+                    </p>
+
                 </div>
 
+
                 <div class="certificate-card">
+
                     <span>🎨</span>
-                    <h3>Website UI/UX Designing using ChatGPT</h3>
-                    <p>SimpliLearn</p>
+
+                    <h3>
+                        Website UI/UX Designing using ChatGPT
+                    </h3>
+
+                    <p>
+                        SimpliLearn
+                    </p>
+
                 </div>
 
+
                 <div class="certificate-card">
+
                     <span>📡</span>
-                    <h3>5-Day Hands-on IoT Workshop</h3>
-                    <p>Growave</p>
+
+                    <h3>
+                        5-Day Hands-on IoT Workshop
+                    </h3>
+
+                    <p>
+                        Growave
+                    </p>
+
                 </div>
 
             </div>
@@ -564,26 +813,59 @@
         <section id="achievements" class="section">
 
             <div class="section-heading">
-                <p class="section-label">ACHIEVEMENTS</p>
-                <h2>A Few Milestones</h2>
+
+                <p class="section-label">
+                    ACHIEVEMENTS
+                </p>
+
+                <h2>
+                    A Few Milestones
+                </h2>
+
             </div>
+
 
             <div class="achievement-grid">
 
+
                 <div class="achievement-card">
-                    <strong>8.41</strong>
-                    <span>Academic Pointer</span>
+
+                    <strong>
+                        8.41
+                    </strong>
+
+                    <span>
+                        Academic Pointer
+                    </span>
+
                 </div>
 
-                <div class="achievement-card">
-    <strong>Internal Hackathon Participant</strong>
-    <span>2026</span>
-</div>
 
-<div class="achievement-card">
-    <strong>Hands-on IoT Workshop</strong>
-    <span>5-Day</span>
-</div>
+                <div class="achievement-card">
+
+                    <strong>
+                        Internal Hackathon Participant
+                    </strong>
+
+                    <span>
+                        2026
+                    </span>
+
+                </div>
+
+
+                <div class="achievement-card">
+
+                    <strong>
+                        Hands-on IoT Workshop
+                    </strong>
+
+                    <span>
+                        5-Day
+                    </span>
+
+                </div>
+
             </div>
 
         </section>
@@ -591,7 +873,8 @@
 
         <!-- ================= CONTACT ================= -->
 
-        <section id="contact" class="contact-section">
+        <section id="contact"
+            class="contact-section">
 
             <div class="contact-content">
 
@@ -599,21 +882,27 @@
                     GET IN TOUCH
                 </p>
 
+
                 <h2>
-                    Let's build something<br>
+                    Let's build something
+                    <br>
                     <span>interesting together.</span>
                 </h2>
+
 
                 <p>
                     I am always interested in learning, collaborating
                     and exploring new opportunities in technology.
                 </p>
 
-                <a
-                    href="mailto:Sanjanasomey2338@gmail.com"
+
+                <a href="mailto:Sanjanasomey2338@gmail.com"
                     class="btn primary-btn">
+
                     Say Hello →
+
                 </a>
+
 
                 <div class="contact-links">
 
@@ -621,18 +910,20 @@
                         📧 Sanjanasomey2338@gmail.com
                     </a>
 
-                    <a
-                        href="https://github.com/sanjanasomey"
+                    <a href="https://github.com/sanjanasomey"
                         target="_blank"
                         rel="noopener noreferrer">
+
                         💻 GitHub
+
                     </a>
 
-                    <a
-                        href="https://www.linkedin.com/in/sanjana-some"
+                    <a href="https://www.linkedin.com/in/sanjana-some"
                         target="_blank"
                         rel="noopener noreferrer">
+
                         🔗 LinkedIn
+
                     </a>
 
                 </div>
@@ -651,6 +942,7 @@
         <div class="footer-content">
 
             <div>
+
                 <a href="#home" class="logo">
                     Sanj<span>.</span>
                 </a>
@@ -658,10 +950,13 @@
                 <p>
                     Artificial Intelligence & Data Science Student
                 </p>
+
             </div>
 
+
             <p>
-                © 2026 Some Sanjana Sanjay. Built with HTML, CSS & JavaScript.
+                © 2026 Some Sanjana Sanjay.
+                Built with HTML, CSS & JavaScript.
             </p>
 
         </div>
@@ -672,4 +967,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
